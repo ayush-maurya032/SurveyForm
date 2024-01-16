@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en" >
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=decive-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="styles.css">
+    <title>Survey Form</title>
+ </head>
+ <body>
+    <header>
+        <h1 id="title">Survey Form</h1>
+            <p id="description">Thank you for taking the time to help us improve</p>
+    </header>
+    <div class="container">
+   
+     <form id="survey-form" method="post" action='http://localhost:3000/submit-form'>
+    <div class="form-group">
+        <label id="name-label" for="name">Name: <input id="name" type="text" placeholder="Your name" required /></label>
+    </div>
+
+    <div class="form-group">
+        <label id="email-label" for="email">Email: <input id="email" type="email" placeholder="Your complete email" required /></label>
+    </div>
+
+    <div class="form-group">
+        <label id="number-label" for="number">Age(optional): <input id="number" type="number" min="13" max="120" placeholder="Your age in years"/></label>
+    </div>
+
+    <div class="form-group">
+        <p>What's your favourite Indian Dessert?</p>
+        <select id="dropdown">
+          <option value="">select one</option>
+          <option value="gulabjamun">Gulab Jamun</option>
+          <option value="gajarhalwa">Gajar Halwa</option>
+          <option value="jalebi">Jalebi</option>
+          <option value="kajukatli">Kaju Katli</option>
+          <option value="chumchum">Chum Chum</option>
+        </select>
+    </div>
+
+    <div class="form-group">
+         <p>Would you snatch it wildly from a person eating this dessert in public?</p>
+         <label for="notsure"> <input id="notsure" type="radio" name="choice" value="notsure"  checked /> Not sure </label>
+         <label for="maybe"><input id="maybe" type="radio" name="choice"  value="maybe"  /> Maybe</label>
+         <label for="definitely"><input id="definitely" type="radio" name="choice"  value= /> Definitely</label>
+    </div>
+    
+    <div class="form-group">
+         <p>What is so special about your favorite dessert?</p>
+        
+         <select id="special-feature-dropdown">
+           <option value="">select one</option>
+           <option value="color">Color</option>
+           <option value="texture">Texture</option>
+           <option value="sweetness">Sweetness</option>
+           <option value="smell">Smell</option>
+           <option value="overalltaste">Overall Taste</option>
+         </select>
+    </div>
+      
+    <div class="form-group">
+         <p>Where do you find this dessert at its best?</p>
+         <label for="home"><input id="home" type="checkbox" name="preference" value="home" >Home</label>
+         <label for="wedding"><input id="wedding" type="checkbox" name="preference" value="weddings">Weddings</label>
+         <label for="funeral"><input id="funeral" type="checkbox" name="preference" value="funeral">Funerals</label>
+         <label for="localshop"><input id="localshop" type="checkbox" name="preference" value="localshop">Local Shop near me</label>
+         <label for="outoftown"><input id="outoftown" type="checkbox" name="preference" value="outoftown">Out of Town</label>
+    </div>
+
+    <div class="form-group">
+         <label>Provide a beautiful memory with this dessert:
+         <textarea id="memory" name="memory" rows="3" cols="30" placeholder="I love it since..."></textarea>
+         </label>
+    </div>
+
+    <div class="form-group">
+          <button type="submit" class="submit-button" id="submit">Submit</button>
+    </div>
+   </form>
+</div>
+ </body>
+</html>
