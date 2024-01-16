@@ -33,7 +33,14 @@ If you'd like to contribute to this project, please follow these steps:
 4. Push to the branch: `git push origin feature-your-feature`.
 5. Create a pull request.
 
+## Credits
 
+- The cafe menu images are provided by [FreeCodeCamp](https://www.freecodecamp.org).
+- The background image is sourced from [FreeCodeCamp's CSS Cafe curriculum](https://www.freecodecamp.org/curriculum/css-cafe).
+
+Visit [FreeCodeCamp](https://www.freecodecamp.org) for more educational resources.
+
+---
 
 ---
 
